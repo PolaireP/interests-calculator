@@ -1,0 +1,139 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+        url('../img/scenic-view-beautiful-mala-osojnica-bled-slovenia-sunny-day.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-weight: 600;
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.358);
+}
+
+.input-wrapper {
+    display: flex;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.column > * {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#calculate-btn {
+    background-color: rgb(72, 185, 62);
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+input[type=radio] {
+    margin-bottom: 5px;
+}
+
+
+input[type=number] {
+    background-color: rgb(240, 240, 240);
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#result {
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 30px;
+    width: 1200px;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tfoot {
+    background-color: black;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.error {
+    color: rgb(190, 31, 31);
+    font-weight: bold;
+    font-size: large;
+}

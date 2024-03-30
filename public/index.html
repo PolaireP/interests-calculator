@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Calculateur d'intérêt</title>
+</head>
+<body>
+    <script type="module" src="../src/loader.js"></script>
+    
+    <!-- Zone d'entrée des données -->
+    <main>
+        <div class="container">
+
+            <div class="input-wrapper">
+                
+                <div class="column">
+                    <div class="wrapper">
+                        <label for="money">Capital (€)</label>
+                        <input type="number" id="money" placeholder="100000">
+                    </div>
+            
+                    <div class="wrapper">
+                        <label for="time">Nombre d'années</label>
+                        <input type="number" id="time" placeholder="5">
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="taux">Taux en % d'intérêt</label>
+                        <input type="number" id="taux" placeholder="12">
+                    </div>
+                </div>
+
+                <fieldset class="wrapper">
+                    <p>Période de paiement</p>
+                    <div>
+                        <input type="radio" name="period" id="Yea" value="Y" checked>
+                        <label for="Yea">Année</label>
+                    </div>
+        
+                    <div>
+                        <input type="radio" name="period" id="Mon" value="M">
+                    <label for="Mon">Mois</label>
+                    </div>
+        
+        
+                    <div>
+                        <input type="radio" name="period" id="Sem" value="S">
+                    <label for="Sem">Semestre</label>
+                    </div>
+        
+        
+                    <div>
+                        <input type="radio" name="period" id="Trim" value="T">
+                    <label for="Trim">Trimestre</label>
+                    </div>
+                </fieldset>
+            </div>
+    
+            <button id="calculate-btn">Calculer</button>
+    
+    
+    
+            
+        </div>
+
+        
+    </main>
+
+    <div id="result" style="visibility: hidden;">
+    
+    </div>
+    
+    <!-- <script src="../javascript/Visual.js"></script> -->
+    <a class="copyright" href="https://www.freepik.com/free-photo/scenic-view-beautiful-mala-osojnica-bled-slovenia-sunny-day_28741296.htm#fromView=search&page=1&position=5&uuid=1fc7d6bb-117b-4099-822a-6ac4fccade04">Image by wirestock</a>
+</body>
+</html>
